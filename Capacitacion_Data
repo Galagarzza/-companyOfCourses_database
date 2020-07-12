@@ -8,18 +8,18 @@ Curso VARCHAR(255) NOT NULL,
 Grupo INT NOT NULL, 
 Horario VARCHAR(255) NOT NULL,
 Colaborador VARCHAR(255) Null,
-Investigaci�n VARCHAR(255) Null
+Investigación VARCHAR(255) Null
 )
 
 
 
-INSERT INTO profesores (Nombre,Curso,Grupo,Horario) VALUES ('Juan P�rez','Desarrollo Software',1,'3:00pm a 5:00pm')
+INSERT INTO profesores (Nombre,Curso,Grupo,Horario) VALUES ('Juan Pérez','Desarrollo Software',1,'3:00pm a 5:00pm')
 
-UPDATE profesores SET Colaborador = 'S�' WHERE Id = 1
+UPDATE profesores SET Colaborador = 'Sí' WHERE Id = 1
 
-INSERT INTO profesores (Nombre,Curso,Grupo,Horario) VALUES ('Vivian Rodr�gez','Sistemas',1,'4:00pm a 6:00pm')
-INSERT INTO profesores (Nombre,Curso,Investigaci�n) VALUES ('Mar�a Fernandez','Sistemas','S�')
-INSERT INTO profesores (Nombre,Curso,Grupo,Horario,Colaborador) VALUES ('Francisco Joen','Desarrollo Software',1,'3:00pm - 4:00pm','S�')
+INSERT INTO profesores (Nombre,Curso,Grupo,Horario) VALUES ('Vivian Rodrígez','Sistemas',1,'4:00pm a 6:00pm')
+INSERT INTO profesores (Nombre,Curso,Investigación) VALUES ('María Fernandez','Sistemas','Sí')
+INSERT INTO profesores (Nombre,Curso,Grupo,Horario,Colaborador) VALUES ('Francisco Joen','Desarrollo Software',1,'3:00pm - 4:00pm','Sí')
 
 
 
@@ -31,7 +31,7 @@ FOREIGN KEY (Profesor_id) REFERENCES profesores(Id)
 )
 
 
-INSERT INTO alumnos (Nombre,Profesor_id) VALUES ('Juanito D�az',1)
+INSERT INTO alumnos (Nombre,Profesor_id) VALUES ('Juanito Díaz',1)
 INSERT INTO alumnos (Nombre,Profesor_id) VALUES ('Fernando Credo',1)
 INSERT INTO alumnos (Nombre,Profesor_id) VALUES ('Pedro Max',2)
-INSERT INTO alumnos (Nombre,Profesor_id) VALUES ('Soraida D�az',1)
+INSERT INTO alumnos (Nombre,Profesor_id) VALUES ('Soraida Díaz',1)
